@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-raspberry: hsl(332, 51%, 32%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rosewhite: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-lightgrey: hsl(30, 18%, 87%);
+  --neutral-brown: hsl(30, 10%, 34%);
+  --neutral-charcoal: hsl(24, 5%, 18%);
+  --max-width: 900px;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--neutral-eggshell);
+}
+
+body {
+  width: 700px;
+  background-color: var(--neutral-white);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.section__container {
+  width: 100%;
+  padding: 20px;
+}
+
+.header__container {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.header__title {
+  font-family: "Young Serif";
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.header__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.preparation__container {
+  margin-bottom: 20px;
+  background-color: var(--neutral-rosewhite);
+}
+
+.preparation__title {
+  font-size: 1.5rem;
+  color: var(--primary-raspberry);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.preparation__item {
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.preparation__item span {
+  font-weight: 700;
+}
+
+.ingredients__container,
+.instruction__container {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--neutral-lightgrey);
+}
+
+.ingredients__title,
+.instruction__title,
+.nutrition__title {
+  font-size: 1.75rem;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-nutmeg);
+  font-family: "Young Serif", serif;
+  margin-bottom: 10px;
+}
+
+.ingredients__item {
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.instructions__item {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.instructions__item span {
+  font-weight: 700;
+}
+
+.nutrition__description {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.nutrition__table {
+  width: 100%;
+  border-spacing: 0;
+  line-height: 3rem;
+}
+
+.nutrition__row td {
+  border-bottom: 1px solid var(--neutral-lightgrey);
+}
+
+.nutrition__type {
+  color: var(--neutral-charcoal);
+}
+
+.nutrition__amount {
+  color: var(--primary-nutmeg);
+  font-weight: 700;
+}
